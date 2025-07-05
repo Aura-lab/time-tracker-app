@@ -1,0 +1,28 @@
+<div class="time-entries__overlay" *ngIf="isLoading">
+  <mat-progress-spinner mode="indeterminate" diameter="60"></mat-progress-spinner>
+</div>
+
+<mat-toolbar color="primary">
+  Time Tracker
+</mat-toolbar>
+
+<div class="time-entries__container">
+  <app-time-entries-table
+    [entries]="timeEntries"
+    (edit)="onEdit($event)"
+    (delete)="onDelete($event)"
+  ></app-time-entries-table>
+
+  <mat-divider class="time-entries__divider"></mat-divider>
+
+  <app-time-entries-form
+    [entry]="entryModel"
+    [people]="people"
+    [tasks]="tasks"
+    [editing]="editing"
+    [isLoading]="isLoading"
+    [today]="today"
+    (entrySubmit)="onSubmit($event)"
+    (entryCancel)="onCancel()"
+  ></app-time-entries-form>
+</div>
