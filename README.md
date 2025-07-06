@@ -1,59 +1,124 @@
 # TimeTrackerApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+A modern time tracking web application built with Angular 20.0.5.  
+This app allows users to create, edit, and manage time entries efficiently, and is designed to demonstrate practical frontend development skills for technical assessments.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
+
+- ✅ Create new time entries with task and participant assignment
+- ✅ Edit and delete existing entries
+- ✅ Display entries in a clean, responsive data table
+- ✅ Form validation and user-friendly error handling
+- ✅ Integration-ready for backend APIs
+
+---
+
+## 💻 Tech Stack
+
+- **Frontend:** Angular 20.0.5, TypeScript, Angular Material
+- **Build Tools:** Angular CLI
+- **Testing:** Jasmine + Karma (unit tests), Cypress (end-to-end tests)
+- **Other:** RxJS, SCSS
+
+---
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Aura-lab/time-tracker-app.git
+cd time-tracker-app
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open your browser and navigate to [http://localhost:4200/](http://localhost:4200/).
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Build
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+To build the project for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The compiled files will be in the `dist/` directory. By default, the build is optimized for performance and speed.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧪 Testing
+
+### ✅ Unit tests
+
+Run with Karma:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+### 🌀 End-to-end tests (Cypress)
+
+#### Start development server
 
 ```bash
-ng e2e
+ng serve
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+#### Run Cypress tests
 
-## Additional Resources
+```bash
+npx cypress open
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+or headless mode:
+
+```bash
+npx cypress run
+```
+
+> ⚡ **Note:** The default Cypress tests expect the app to be running on [http://localhost:4200/](http://localhost:4200/). Adjust `baseUrl` in `cypress.config.ts` if needed.
+
+---
+
+## 🤝 Contribution
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💬 Additional Information
+
+- This project was developed as part of a technical assessment and demonstrates best practices for Angular application structure, state management, testing (unit & e2e), and component-driven development.
+- If you have questions, please contact me via wanghr0000@gmail.com
+
+---
+
+## ⭐ Acknowledgments
+
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [Cypress](https://www.cypress.io/)
+- [RxJS](https://rxjs.dev/)
